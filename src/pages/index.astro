@@ -1,0 +1,27 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../layouts/header.astro';
+import DivNav from '../layouts/DivNav.astro';
+import Button from '../ui/button.astro';
+import H2 from '../components/h2.astro'
+import H1 from '../components/h1.astro';
+import P from '../components/p.astro';
+import DivImage from '../layouts/DivImage.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header/>
+		<DivNav/>
+		<Button/>
+		<!-- <H1/>
+	    <P/> -->
+		<DivImage/>
+		<H2/>
+	</body>
+</html>

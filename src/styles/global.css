@@ -1,0 +1,137 @@
+/*
+  The CSS in this style tag is based off of Bear Blog's default CSS.
+  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
+  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
+ */
+
+ @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed&family=Montserrat:ital,wght@1,300&display=swap');
+body {
+	font-family: Verdana, sans-serif;
+	margin: auto;
+	padding: 20px;
+	max-width: 65ch;
+	background: linear-gradient(to right,#006691f9,#000000e8), url("/public/fondo.jpg");
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	color: #444;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b {
+	color: #222;
+}
+li{
+	list-style: none;
+	display: inline-block;
+	padding: 10px 15px;
+	position: relative;
+	right: 250px;
+	color: #FFFFFF;
+	font-family: 'IBM Plex Sans Condensed', sans-serif;
+	font-size: 18px;
+
+
+}
+li:hover{
+	background-color: #0979b0;
+	transform: translateY(5px);
+	cursor: pointer;
+	
+}
+
+
+#MenuHamburguer{
+	display: inline-block;
+	width:30px;
+	height: 20px;
+	position: relative;
+	z-index: 2;
+	right: 300px;
+	bottom: 70px;
+	cursor: pointer;
+
+}
+ 
+#MenuHamburguer span{
+	width: 100%;
+	height: 4px;
+	border-radius: 4px;
+	display: block;
+	position: absolute;
+	background: #fff;
+	transition: all 0.25s ease; /* Propiedades a animar | Tiempo | Tipo animación*/
+	transform-origin : 6px 100%;
+
+}
+ 
+#MenuHamburguer span:nth-child(2){
+	top: calc(50% - 2px);
+}
+ 
+#MenuHamburguer span:nth-child(3){
+bottom: 0;
+}
+
+.FirstButton{
+	border-color: #ffffff;
+	background: #ffffff;
+	font-size: 16px;
+	padding: 8px;
+	width: 140px;
+	font-family: 'IBM Plex Sans Condensed', sans-serif;
+	letter-spacing:1px;
+	font-weight: bold;
+	position: relative;
+	top:23rem;
+	right: 20rem;
+
+}
+.SecondButton{
+	border-color: #ffffff;
+	background: #ffffff;
+	font-size: 16px;
+	padding: 8px;
+	margin:15px;
+	width:140px;
+	font-family: 'IBM Plex Sans Condensed', sans-serif;
+	letter-spacing:1px;
+	font-weight: bold;
+	position: relative;
+	top:23rem;
+	right: 20rem;
+}
+.SecondButton:hover{
+	background-color: #a6a6a6;
+	border-color: #a6a6a6;
+	box-shadow: 3px 4px #222;
+}
+.image{
+	position: relative;
+	top: -91px;
+	left: 290px;
+	float: left; 
+	width: 515px; 
+	height: 440px; 
+	line-height:0;
+	display:block;
+}
+.FirstButton:hover{
+	background-color: #a6a6a6;
+	border-color: #a6a6a6;
+	box-shadow: 3px 4px #222;
+
+}
+.title{
+	position: relative;
+	left: 250px;
+	color:#FFFFFF;
+	bottom: 135px;
+	font-size: 20px;
+	font-family: 'IBM Plex Sans Condensed', sans-serif;
+	letter-spacing:2px;
+}
